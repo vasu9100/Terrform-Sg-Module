@@ -1,5 +1,5 @@
 module "mongo_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module.git?ref=main" # Adjust the relative path as needed
     sg_name = "mongo" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -7,7 +7,7 @@ module "mongo_sg" {
 }
 
 module "catalogue_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "catalogue" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -15,7 +15,7 @@ module "catalogue_sg" {
 }
 
 module "user_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "user" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -23,7 +23,7 @@ module "user_sg" {
 }
 
 module "redis_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "redis" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -31,7 +31,7 @@ module "redis_sg" {
 }
 
 module "cart_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "cart" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -39,7 +39,7 @@ module "cart_sg" {
 }
 
 module "mysql_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "mysql" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -47,7 +47,7 @@ module "mysql_sg" {
 }
 
 module "shipping_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "shipping" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -55,7 +55,7 @@ module "shipping_sg" {
 }
 
 module "rabbit_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "rabbit" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -63,7 +63,7 @@ module "rabbit_sg" {
 }
 
 module "payment_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "payment" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -71,7 +71,7 @@ module "payment_sg" {
 }
 
 module "dispatch_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "dispatch" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
@@ -79,7 +79,7 @@ module "dispatch_sg" {
 }
 
 module "web_sg" {
-    source = "../sg-module"  # Adjust the relative path as needed
+    source = "github.com/vasu9100/Terrform-Sg-Module/sg-module.git?ref=main" # Adjust the relative path as needed
     sg_name = "web" # Enclosed in double quotes to represent it as a string
     vpc_id  = data.aws_ssm_parameter.vpc_id.value
     app_name = var.app_name
